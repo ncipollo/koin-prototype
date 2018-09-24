@@ -25,7 +25,12 @@ dependencies {
     implementation kotlinStdLib
     implementation appCompat
     implementation constraintLayout
+    implementation koinAndroid
+    implementation koinCore
+    implementation koinViewModel
+
     testImplementation junit
+
     androidTestImplementation testRunner
     androidTestImplementation espresso
 }
