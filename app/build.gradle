@@ -27,8 +27,10 @@ dependencies {
     implementation constraintLayout
     implementation koinAndroid
     implementation koinViewModel
+    implementation rxAndroid
+    implementation rxJava
+    implementation support
 
-    implementation 'com.android.support:support-v4:28.0.0'
     testImplementation junit
 
     androidTestImplementation testRunner

@@ -10,21 +10,24 @@ buildscript {
         koinVersion = '1.0.1'
         kotlin_version = '1.2.71'
         lifecycleVersion = '1.1.1'
+        rxJavaVersion = '2.2.2'
+        rxAndroidVersion = '2.1.0'
         testRunnerVersion = '1.0.2'
 
         appCompat = "com.android.support:appcompat-v7:$appCompatVersion"
         constraintLayout = "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
         espresso = "com.android.support.test.espresso:espresso-core:$espressoVersion"
         junit = "junit:junit:$junitVersion"
-
         koinAndroid = "org.koin:koin-android:$koinVersion"
         koinCore = "org.koin:koin-core:$koinVersion"
         koinViewModel = "org.koin:koin-android-viewmodel:$koinVersion"
-
         kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
         lifecycleExtensions = "android.arch.lifecycle:extensions:$lifecycleVersion"
         lifecycleRuntime = "android.arch.lifecycle:runtime:$lifecycleVersion"
+        rxAndroid = "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+        rxJava = "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
         testRunner = "com.android.support.test:runner:$testRunnerVersion"
+        support = "com.android.support:support-v4:$appCompatVersion"
     }
     repositories {
         google()

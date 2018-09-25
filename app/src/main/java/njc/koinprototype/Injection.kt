@@ -7,11 +7,19 @@ import org.koin.dsl.module.module
 
 object Injection {
 
-    private val viewModelModule = module {
-        viewModel { MainViewModel() }
+    private val repoModule = module {
+        single { IntervalRepository() }
     }
 
-    private val modules = listOf(viewModelModule)
+    private val interactorModule = module {
+        single { MainInteractor(get()) }
+    }
+
+    private val viewModelModule = module {
+        viewModel { MainViewModel(get()) }
+    }
+
+    private val modules = listOf(repoModule, interactorModule, viewModelModule)
 
     fun start(application: Application) {
         application.startKoin(application, modules)
