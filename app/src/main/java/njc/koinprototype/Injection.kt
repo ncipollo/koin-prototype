@@ -19,7 +19,9 @@ object Injection {
         viewModel { MainViewModel(get()) }
     }
 
-    private val modules = listOf(repoModule, interactorModule, viewModelModule)
+    val modules = listOf(repoModule, interactorModule, viewModelModule)
+
+    val modulesMissingDependency = listOf(interactorModule, viewModelModule)
 
     fun start(application: Application) {
         application.startKoin(application, modules)

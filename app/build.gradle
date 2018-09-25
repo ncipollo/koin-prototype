@@ -32,6 +32,8 @@ dependencies {
     implementation support
 
     testImplementation junit
+    testImplementation koinTest
+    testImplementation mockito
 
     androidTestImplementation testRunner
     androidTestImplementation espresso
