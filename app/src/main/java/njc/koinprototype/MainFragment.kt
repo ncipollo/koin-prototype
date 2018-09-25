@@ -43,5 +43,7 @@ class MainFragment : Fragment() {
             }
         })
         Log.e("Parameter value", paramViewModel.parameter)
+
+        JavaInjectable()
     }
 }

@@ -26,6 +26,7 @@ dependencies {
     implementation appCompat
     implementation constraintLayout
     implementation koinAndroid
+    implementation koinJava
     implementation koinViewModel
     implementation rxAndroid
     implementation rxJava

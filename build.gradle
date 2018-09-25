@@ -23,6 +23,7 @@ buildscript {
         espressoIntents = "com.android.support.test.espresso:espresso-intents:$espressoVersion"
         junit = "junit:junit:$junitVersion"
         koinAndroid = "org.koin:koin-android:$koinVersion"
+        koinJava = "org.koin:koin-java:$koinVersion"
         koinTest = "org.koin:koin-test:$koinVersion"
         koinViewModel = "org.koin:koin-android-viewmodel:$koinVersion"
         kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
