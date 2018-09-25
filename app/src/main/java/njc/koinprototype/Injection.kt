@@ -3,6 +3,7 @@ package njc.koinprototype
 import android.app.Application
 import org.koin.android.ext.android.startKoin
 import org.koin.android.viewmodel.ext.koin.viewModel
+import org.koin.dsl.module.Module
 import org.koin.dsl.module.module
 
 object Injection {
@@ -25,5 +26,9 @@ object Injection {
 
     fun start(application: Application) {
         application.startKoin(application, modules)
+    }
+
+    fun startTest(application: Application, mockModule: Module) {
+        application.startKoin(application, modules + mockModule)
     }
 }

@@ -10,7 +10,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "njc.koinprototype.KoinTestRunner"
     }
     buildTypes {
         release {
@@ -36,5 +36,7 @@ dependencies {
     testImplementation mockito
 
     androidTestImplementation testRunner
+    androidTestImplementation dexmakerMockito
     androidTestImplementation espresso
+    androidTestImplementation espressoIntents
 }
