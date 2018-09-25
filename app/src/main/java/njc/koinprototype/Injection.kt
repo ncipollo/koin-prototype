@@ -5,6 +5,7 @@ import org.koin.android.ext.android.startKoin
 import org.koin.android.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.Module
 import org.koin.dsl.module.module
+import org.koin.log.EmptyLogger
 
 object Injection {
 
@@ -26,7 +27,7 @@ object Injection {
     val modulesMissingDependency = listOf(interactorModule, viewModelModule)
 
     fun start(application: Application) {
-        application.startKoin(application, modules)
+        application.startKoin(context = application, modules = modules, logger = EmptyLogger())
     }
 
     fun startTest(application: Application, mockModule: Module) {
