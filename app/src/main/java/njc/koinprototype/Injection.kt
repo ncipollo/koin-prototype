@@ -18,6 +18,7 @@ object Injection {
 
     private val viewModelModule = module {
         viewModel { MainViewModel(get()) }
+        viewModel { ParameterViewModel(it[0]) }
     }
 
     val modules = listOf(repoModule, interactorModule, viewModelModule)

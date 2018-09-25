@@ -4,7 +4,9 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.ViewModel
 import io.reactivex.disposables.Disposable
 
-class MainViewModel(private val interactor: MainInteractor) : ViewModel() {
+class MainViewModel(
+    private val interactor: MainInteractor
+) : ViewModel() {
     private var disposable: Disposable? = null
 
     val viewState = object : LiveData<ViewState>() {
